@@ -1,6 +1,6 @@
-const name = 'Rebeca'
+const umNome = 'Rebeca'
 
-const concatenacao = 'Olá ' + name + '!'
+const concatenacao = 'Olá ' + umNome + '!'
 const template = `
   Olá 
   ${concatenacao}!!!

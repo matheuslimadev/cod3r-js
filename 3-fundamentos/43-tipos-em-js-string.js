@@ -9,11 +9,11 @@ console.log(escola.charAt(4)) // string.charAt(4) <- a função charAt, nesse ca
 console.log(escola.charAt(10)) // Vai retornar uma String vazia. Porque na string não existe o índice 10.
 console.log(escola.charCodeAt(3)) // Vai retornar o código (unicode - da tabela asc) referente ao que foi passdo no parâmetro. Pode pasar o parâmetro literal (sem aspas) ou com aspas ''. - Ref: https://unicode-table.com/pt/#basic-latin
 
-console.log(escola.indexOf(3)) // Vai econcontrar o indice 3(number) referente a palavra c(0) o(1) d(2) 3(3) r(4). Quando for números literais passado no argumento ele consegue achar esse número na string. Mas se você quer achar letras, deve passar no argumento da função uma string.
-console.log(escola.indexOf('c')) // Vai retornar 0.
+console.log(escola.indexOf(3)) // Vai retornar a posição(number) do que foi setado via parâmetro(nesse caso: 3) na string(nesse caso escola) onde a função foi chamada. Referencia a palavra c(0) o(1) d(2) 3(3) r(4). Quando for números literais passado no argumento ele consegue achar esse número na string. Mas se você quer achar letras, deve passar no argumento da função uma string.
+console.log(escola.indexOf('c')) // Vai retornar a posição 0.
 
 console.log(escola.substring(1)) // Retorna 'od3r'. Retorna a string a partir do índice que você setou no argumento (nesse caso 1), incluindo a string correspondente a este índice (nesse caso: 'o')
-console.log(escola.substring(0, 2)) // Retorna 'co'. Argumento 1, a posição inicial da string que vocêr quer (incluindo ela), argumento 2 até qual posição da string você quer, NÃO incluíndo a string correspondente ao indice que você setou. Nesse caso retornou 'co', porque 'c' (índice: 0), 'o' (índice: 1) e passei 2, a não inluí 'd' (índice: 2).
+console.log(escola.substring(0, 2)) // Retorna 'co'. Argumento 1, a posição inicial da string que vocêr quer (incluindo ela), argumento 2 até qual posição da string você quer, NÃO incluíndo a string correspondente ao indice que você setou. Nesse caso retornou 'co', porque 'c' (índice: 0), 'o' (índice: 1) e passei 2, assim não inluí 'd' (índice: 2).
 
 // CONCATENAR COM FUNÇÃO NATIVA DO JS:
 console.log('Escola: '.concat(escola).concat('!'))
