@@ -10,7 +10,7 @@
     }
   }
 }
-console.log(sera) // 'sera' por ser uma variável declarada como 'var' ignora o escopo de bloco
+console.log(sera) // 'sera' - por ser uma variável declarada como 'var' ignora o escopo de bloco
 
 const mostrar = () => {
   var uau = 'uau!'
